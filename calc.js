@@ -1,79 +1,100 @@
 
 
 var player = {
-	'eighty': {
-		name: 'eighty',
-		ewp: 80,
+	'BJ': {
 		wins: 0,
 		losses: 0,
+		draws: 0,
 		elo: 1600
 	},
-	'seventy': {
-		name: 'seventy',
-		ewp: 70,
+	'BK': {
 		wins: 0,
 		losses: 0,
+		draws: 0,
 		elo: 1600
 	},
-	'fifty': {
-		name: 'fifty',
-		ewp: 50,
+	'JX': {
 		wins: 0,
 		losses: 0,
+		draws: 0,
 		elo: 1600
 	},
-	'thirty': {
-		name: 'thirty',
-		ewp: 30,
+	'MP': {
 		wins: 0,
 		losses: 0,
+		draws: 0,
 		elo: 1600
 	},
-	'twenty': {
-		name: 'twenty',
-		ewp: 20,
+	'TX': {
 		wins: 0,
 		losses: 0,
+		draws: 0,
 		elo: 1600
 	}
 };
 
-var Xgame = [
-	['ninety', 'sixty'],['fifty','twenty'],
-	['ninety', 'fifty'],['sixty','twenty'],
-	['ninety', 'twenty'],['fifty','sixty']
-];
 var game = [
-	['seventy', 'twenty'],['fifty','thirty'],
-	['eighty', 'twenty'],['seventy','thirty'],
-	['eighty', 'thirty'],['seventy','fifty'],
-	['eighty', 'fifty'],['thirty','twenty'],
-	['eighty', 'seventy'],['fifty','twenty']
+	['MP', 'TX', 'D'],
+	['BJ', 'BK', 'L'],
+	['BK', 'TX', 'W'],
+	['MP', 'JX', 'L'],
+	['JX', 'BJ', 'D'],
+	['BK', 'MP', 'L'],
+	['BK', 'JX', 'W'],
+	['BJ', 'TX', 'W'],
+
+	['BJ', 'MP', 'W'],
+	['BK', 'BJ', 'L'],
+	['TX', 'MP', 'D'],
+	['BJ', 'TX', 'W'],
+	['BK', 'JX', 'L'],
+	['BK', 'TX', 'W'],
+	['JX', 'MP', 'L'],
+
+	['BJ', 'TX', 'L'],
+	['BK', 'MP', 'W'],
+	['TX', 'JX', 'L'],
+	['BJ', 'BK', 'D'],
+	['JX', 'MP', 'W'],
+	['BK', 'JX', 'W'],
+	['MP', 'TX', 'L']
+
 ];
 
 var winner, loser;
 
-for (var x=0; x < 1000000; x++) {
-	for (var i = game.length - 1; i >= 0; i--) {
-		var player1 = player[game[i][0]];
-		var player2 = player[game[i][1]];
+for (var i = 0; i < game.length; i++) {
+	var player1 = player[game[i][0]];
+	var player2 = player[game[i][1]];
 
-		// Figure out who wins
-		winner = Math.random() * (player1.ewp+player2.ewp) < player1.ewp ? player1 : player2;
-		loser = (winner === player1) ? player2 : player1;
+	switch (game[i][2]) {
+		case 'W':
+			player1.wins++;
+			player2.losses++;
+			Sa = 1; // Actual outcome for P1
+		break;
+		case 'L':
+			player1.losses++;
+			player2.wins++;
+			Sa = 0;
+		break;
+		case 'D':
+			player1.draws++;
+			player2.draws++;
+			Sa = 0.5;
+		break;
+	}
 
-		// Update wins, losses
-		winner.wins++;
-		loser.losses++;
+	// Update elo
+	var Ea = (1 / (1 + Math.pow(10, (player1.elo - player2.elo)/400)));
 
-		// Update elo
-		var Ea = 1 / (1 + Math.pow(10, (winner.elo - loser.elo)/400));
+	var points = 32 * (Sa - Ea);
 
-		winner.elo += Math.round(Ea * 32);
-		loser.elo -= Math.round(Ea * 32);
+	player1.elo += Math.round(points);
+	player2.elo -= Math.round(points);
 
-	};
 };
+
 
 console.log(player);
 
