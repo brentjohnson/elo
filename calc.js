@@ -13,7 +13,7 @@ var player = {
 		draws: 0,
 		elo: 1600
 	},
-	'JX': {
+	'JT': {
 		wins: 0,
 		losses: 0,
 		draws: 0,
@@ -25,7 +25,7 @@ var player = {
 		draws: 0,
 		elo: 1600
 	},
-	'TX': {
+	'TS': {
 		wins: 0,
 		losses: 0,
 		draws: 0,
@@ -35,32 +35,36 @@ var player = {
 
 var game = [
 	[
-		['MP', 'TX', 'D'],
+		['MP', 'TS', 'D'],
 		['BJ', 'BK', 'L'],
-		['BK', 'TX', 'W'],
-		['MP', 'JX', 'L'],
-		['JX', 'BJ', 'D'],
+		['BK', 'TS', 'W'],
+		['MP', 'JT', 'L'],
+		['JT', 'BJ', 'D'],
 		['BK', 'MP', 'L'],
-		['BK', 'JX', 'W'],
-		['BJ', 'TX', 'W']
+		['BK', 'JT', 'W'],
+		['BJ', 'TS', 'W']
 	],
 	[
 		['BJ', 'MP', 'W'],
 		['BK', 'BJ', 'L'],
-		['TX', 'MP', 'D'],
-		['BJ', 'TX', 'W'],
-		['BK', 'JX', 'L'],
-		['BK', 'TX', 'W'],
-		['JX', 'MP', 'L']
+		['TS', 'MP', 'D'],
+		['BJ', 'TS', 'W'],
+		['BK', 'JT', 'L'],
+		['BK', 'TS', 'W'],
+		['JT', 'MP', 'L']
 	],
 	[
-		['BJ', 'TX', 'L'],
+		['BJ', 'TS', 'L'],
 		['BK', 'MP', 'W'],
-		['TX', 'JX', 'L'],
+		['TS', 'JT', 'L'],
 		['BJ', 'BK', 'D'],
-		['JX', 'MP', 'W'],
-		['BK', 'JX', 'W'],
-		['MP', 'TX', 'L']
+		['JT', 'MP', 'W'],
+		['BK', 'JT', 'W'],
+		['MP', 'TS', 'L']
+	],
+	[
+		['BJ', 'TS', 'W']
+
 	]
 ];
 
@@ -95,7 +99,7 @@ for (var w = 0; w < game.length; w++) {
 		}
 
 		// Update elo
-		var Ea = (1 / (1 + Math.pow(10, (player1.elo - player2.elo)/400)));
+		var Ea = (1 / (1 + Math.pow(10, (player2.elo - player1.elo)/400)));
 
 		var points = 32 * (Sa - Ea);
 
