@@ -1,4 +1,4 @@
-
+var _ = require('lodash');
 
 var player = {
 	'BJ': {
@@ -78,6 +78,8 @@ var winner, loser;
 for (var w = 0; w < game.length; w++) {
 	
 	console.log(player);
+	var startRank = _.pluck(player, 'elo');
+	console.log(startRank);
 
 	// Iterate over each game
 	for (var i = 0; i < game[w].length; i++) {
@@ -111,6 +113,14 @@ for (var w = 0; w < game.length; w++) {
 		player2.elo -= Math.round(points);
 
 	};
+	var endRank = _.pluck(player, 'elo');
+	console.log(endRank);
+
+	var diff = endRank.map(function (num, idx) {
+		return num - startRank[idx];
+	}); 
+	console.log(diff);
+	
 };
 
 console.log(player);
