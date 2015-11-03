@@ -69,6 +69,16 @@ var game = [
 		['BJ', 'BK', 'L'],
 		['BK', 'TS', 'W'],
 		['BJ', 'MP', 'L']
+	],
+	[
+		['BJ', 'MP', 'W'],
+		['BK', 'TS', 'L'],
+		['BJ', 'TS', 'W'],
+		['BK', 'MP', 'L'],
+		['BJ', 'JT', 'W'],
+		['MP', 'TS', 'L'],
+		['BJ', 'BK', 'L'],
+		['MP', 'JT', 'W']
 	]
 ];
 
@@ -77,9 +87,8 @@ var winner, loser;
 // Iterate over each week
 for (var w = 0; w < game.length; w++) {
 	
-	console.log(player);
 	var startRank = _.pluck(player, 'elo');
-	console.log(startRank);
+	var gamesPlayed = {'BJ': 0, 'BK':0, 'JT':0, 'MP':0, 'TS': 0};
 
 	// Iterate over each game
 	for (var i = 0; i < game[w].length; i++) {
@@ -112,15 +121,20 @@ for (var w = 0; w < game.length; w++) {
 		player1.elo += Math.round(points);
 		player2.elo -= Math.round(points);
 
+		gamesPlayed[game[w][i][0]]++;
+		gamesPlayed[game[w][i][1]]++;
+
 	};
 	var endRank = _.pluck(player, 'elo');
-	console.log(endRank);
+	var gp = [gamesPlayed['BJ'], gamesPlayed['BK'], gamesPlayed['JT'], gamesPlayed['MP'], gamesPlayed['TS']];
 
 	var diff = endRank.map(function (num, idx) {
-		return num - startRank[idx];
+		return Math.round(((gp[idx] > 0) ? (num - startRank[idx])/gp[idx] : 0)*100)/100;
 	}); 
+
 	console.log(diff);
-	
+	console.log(endRank);
+
 };
 
 console.log(player);
