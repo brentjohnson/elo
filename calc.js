@@ -116,15 +116,17 @@ for (var w = 0; w < game.length; w++) {
 		// Update elo
 		var Ea = (1 / (1 + Math.pow(10, (player2.elo - player1.elo)/400)));
 
-		var points = 32 * (Sa - Ea);
+		var points = Math.round(32 * (Sa - Ea));
 
-		player1.elo += Math.round(points);
-		player2.elo -= Math.round(points);
+		player1.elo += points;
+		player2.elo -= points;
 
 		gamesPlayed[game[w][i][0]]++;
 		gamesPlayed[game[w][i][1]]++;
 
+		console.log(game[w][i]+' '+points)
 	};
+
 	var endRank = _.pluck(player, 'elo');
 	var gp = [gamesPlayed['BJ'], gamesPlayed['BK'], gamesPlayed['JT'], gamesPlayed['MP'], gamesPlayed['TS']];
 
