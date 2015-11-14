@@ -147,7 +147,15 @@ for (var w = 0; w < game.length; w++) {
 
 };
 
+// Overall win %
+_.map(player, 
+	function(p) {
+		p.win_percent = Math.round((p.wins+p.draws*0.5)/(p.wins+p.draws+p.losses)*10000)/100;
+	});
+
 console.log(player);
+
+
 
 
 
