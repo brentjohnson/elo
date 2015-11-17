@@ -87,6 +87,16 @@ var game = [
 		['BK', 'TS', 'W'],
 		['BJ', 'TS', 'W'],
 		['MP', 'BK', 'W']
+	],
+	[
+		['BJ', 'BK', 'D'],
+		['MP', 'TS', 'W'],
+		['BJ', 'TS', 'L'],
+		['MP', 'JT', 'W'],
+		['BK', 'JT', 'W'],
+		['BJ', 'MP', 'D'],
+		['JT', 'TS', 'W'],
+		['MP', 'BK', 'W']
 	]
 ];
 
@@ -154,8 +164,3 @@ _.map(player,
 	});
 
 console.log(player);
-
-
-
-
-
