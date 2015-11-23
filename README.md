@@ -1,2 +1,2 @@
 # elo
-Scratch project for tracking ratings
+Scratch project for tracking Magic The Gathering (MTG) ratings
