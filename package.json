@@ -4,7 +4,8 @@
   "description": "Calculate elo ratings",
   "main": "calc.js",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "minimongo": "^3.6.0"
   },
   "devDependencies": {},
   "scripts": {

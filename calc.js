@@ -1,38 +1,3 @@
-var _ = require('lodash');
-
-var player = {
-	'BJ': {
-		wins: 0,
-		losses: 0,
-		draws: 0,
-		elo: 1600
-	},
-	'BK': {
-		wins: 0,
-		losses: 0,
-		draws: 0,
-		elo: 1600
-	},
-	'JT': {
-		wins: 0,
-		losses: 0,
-		draws: 0,
-		elo: 1600
-	},
-	'MP': {
-		wins: 0,
-		losses: 0,
-		draws: 0,
-		elo: 1600
-	},
-	'TS': {
-		wins: 0,
-		losses: 0,
-		draws: 0,
-		elo: 1600
-	}
-};
-
 var game = [
 	[
 		['MP', 'TS', 'D'],
@@ -108,18 +73,91 @@ var game = [
 	]
 ];
 
-var winner, loser;
+
+var _ = require('lodash');
+var minimongo = require("minimongo");
+ 
+var LocalDb = minimongo.MemoryDb;
+ 
+// Create local db (in memory database with no backing) 
+var db = new LocalDb();
+ 
+// Add a collection to the database 
+db.addCollection("events");
+db.addCollection("players");
+db.addCollection("ratingshistory");
+
+//doc = { species: "dog", name: "Bingo" };
+ 
+// // Always use upsert for both inserts and modifies 
+// db.animals.upsert(doc, function() {
+//     // Success: 
+ 
+//     // Query dog (with no query options beyond a selector) 
+//     db.animals.findOne({ species:"dog" }, {}, function(res) {
+//         console.log("Dog's name is: " + res.name);
+//     });
+// });
+
+// {
+// 	name: 'BJ',
+// 	rating: 1600,
+// 	wins: 0,
+// 	draws: 0,
+// 	losses: 0,
+// 	opponent: [{
+// 		name: 'BK',
+// 		wins: 0,
+// 		draws: 0,
+// 		losses: 0,
+// 	}]
+// }
+
+var getPlayer = function ( playerName ) {
+
+	var player1 = db.players.findOne({ name: playerName });
+
+	return player1 ? player1 : { name: playerName, rating: 1600, wins: 0, draws: 0, loses: 0, opponent: [] };
+}
+
+var updatePlayer = function ( player ) {
+
+	db.players.upsert( player );
+console.log(db.players);
+}
+
+// for each week
+	// create event
+	// for each game
+		// insert Game
+		// add p1 to event if needed (start/end rating)
+		// update event for p1
+		// update Rating p1
+		// insert RatingHistory p1
+		// add p2 to event if needed (start/end rating)
+		// update event for p2
+		// update Rating p2
+		// insert RatingHistory p2
 
 // Iterate over each week
 for (var w = 0; w < game.length; w++) {
 	
-	var startRank = _.pluck(player, 'elo');
-	var gamesPlayed = {'BJ': 0, 'BK':0, 'JT':0, 'MP':0, 'TS': 0};
+	// getEvent()
+	var eventt = { eventId: w, startRating: [], endRating: [] };
+
+	db.events.upsert( eventt );
+
+	// var startRank = _.pluck(player, 'elo');
+	// var gamesPlayed = {'BJ': 0, 'BK':0, 'JT':0, 'MP':0, 'TS': 0};
 
 	// Iterate over each game
 	for (var i = 0; i < game[w].length; i++) {
-		var player1 = player[game[w][i][0]];
-		var player2 = player[game[w][i][1]];
+
+		var player1 = getPlayer( game[w][i][0] );
+		var player2 = getPlayer( game[w][i][1] );
+
+
+console.log('==========DONE=============');
 
 		switch (game[w][i][2]) {
 			case 'W':
@@ -140,35 +178,39 @@ for (var w = 0; w < game.length; w++) {
 		}
 
 		// Update elo
-		var Ea = (1 / (1 + Math.pow(10, (player2.elo - player1.elo)/400)));
+		var Ea = (1 / (1 + Math.pow(10, (player2.rating - player1.rating)/400)));
 
 		var points = Math.round(32 * (Sa - Ea));
 
-		player1.elo += points;
-		player2.elo -= points;
+		player1.rating += points;
+		player2.rating -= points;
 
-		gamesPlayed[game[w][i][0]]++;
-		gamesPlayed[game[w][i][1]]++;
+	//	gamesPlayed[game[w][i][0]]++;
+	//	gamesPlayed[game[w][i][1]]++;
+
+		updatePlayer( player1 );
+		updatePlayer( player2 );
 
 		console.log(game[w][i]+' '+points)
 	};
 
-	var endRank = _.pluck(player, 'elo');
-	var gp = [gamesPlayed['BJ'], gamesPlayed['BK'], gamesPlayed['JT'], gamesPlayed['MP'], gamesPlayed['TS']];
+	// var endRank = _.pluck(player, 'rating');
+	// var gp = [gamesPlayed['BJ'], gamesPlayed['BK'], gamesPlayed['JT'], gamesPlayed['MP'], gamesPlayed['TS']];
 
-	var diff = endRank.map(function (num, idx) {
-		return Math.round(((gp[idx] > 0) ? (num - startRank[idx])/gp[idx] : 0)*100)/100;
-	}); 
+	// var diff = endRank.map(function (num, idx) {
+	// 	return Math.round(((gp[idx] > 0) ? (num - startRank[idx])/gp[idx] : 0)*100)/100;
+	// }); 
 
-	console.log(diff);
-	console.log(endRank);
+	// console.log(diff);
+	// console.log(endRank);
 
 };
 
 // Overall win %
-_.map(player, 
-	function(p) {
-		p.win_percent = Math.round((p.wins+p.draws*0.5)/(p.wins+p.draws+p.losses)*10000)/100;
-	});
+// _.map(player, 
+// 	function(p) {
+// 		p.win_percent = Math.round((p.wins+p.draws*0.5)/(p.wins+p.draws+p.losses)*10000)/100;
+// 	});
 
-console.log(player);
+// console.log(player);
+
