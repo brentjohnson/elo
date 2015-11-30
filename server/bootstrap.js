@@ -121,7 +121,7 @@ Meteor.startup(function () {
 			var player = Players.findOne({ name: playerName });
 
 			if (!player) {
-				Players.insert({ name: playerName, rating: 1600, wins: 0, draws: 0, loses: 0, opponent: [] });
+				Players.insert({ name: playerName, rating: 1600, wins: 0, draws: 0, losses: 0, opponent: [] });
 				player = Players.findOne({ name: playerName });
 			}
 
@@ -130,7 +130,7 @@ Meteor.startup(function () {
 
 		var updatePlayer = function ( player ) {
 
-			Players.update( {name: player.name}, {$set: {rating: player.rating}});
+			Players.update( {name: player.name}, {$set: {rating: player.rating, wins: player.wins, draws: player.draws, losses: player.losses}});
 		}
 
 		// for each week
