@@ -84,6 +84,14 @@ Meteor.startup(function () {
 			['JT', 'TS', 'W'],
 			['BK', 'MP', 'L'],
 			['BJ', 'JT', 'W']
+		],
+		[
+			['BK', 'MP', 'W'],
+			['BJ', 'TS', 'D'],
+			['BJ', 'MP', 'W'],
+			['BK', 'TS', 'W'],
+			['BJ', 'BK', 'W'],
+			['MP', 'TS', 'W']
 		]
 	];
 
