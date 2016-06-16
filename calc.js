@@ -42,6 +42,9 @@ for (var w = 0; w < game.length; w++) {
 	var startRank = _.pluck(player, 'elo');
 	var gamesPlayed = {'BJ': 0, 'BK':0, 'JT':0, 'MP':0, 'TS': 0};
 
+	var sumSa = {'BJ': 0, 'BK':0, 'JT':0, 'MP':0, 'TS': 0};
+	var sumEa = {'BJ': 0, 'BK':0, 'JT':0, 'MP':0, 'TS': 0};
+
 	// Iterate over each game
 	for (var i = 0; i < game[w].length; i++) {
 		var player1 = player[game[w][i][0]];
@@ -65,19 +68,22 @@ for (var w = 0; w < game.length; w++) {
 			break;
 		}
 
-		// Update elo
-		var Ea = (1 / (1 + Math.pow(10, (player2.elo - player1.elo)/400)));
+		sumSa[game[w][i][0]] += Sa;
+		sumSa[game[w][i][1]] += 1-Sa;
 
-		var points = Math.round(32 * (Sa - Ea));
-
-		player1.elo += points;
-		player2.elo -= points;
+		sumEa[game[w][i][0]] += (1 / (1 + Math.pow(10, (player2.elo - player1.elo)/400)));
+		sumEa[game[w][i][1]] += (1 / (1 + Math.pow(10, (player1.elo - player2.elo)/400)));
 
 		gamesPlayed[game[w][i][0]]++;
 		gamesPlayed[game[w][i][1]]++;
 
-		console.log(game[w][i]+' '+points)
 	};
+
+	// Print out results for the week
+	for (p in sumEa) {
+		console.log("Player "+p+" Performance: "+(sumSa[p]-sumEa[p])+" Expected: "+sumEa[p]+" Actual: "+sumSa[p]);
+		player[p].elo += Math.round(32 * (sumSa[p] - sumEa[p]));
+	}
 
 	var endRank = _.pluck(player, 'elo');
 	var gp = [gamesPlayed['BJ'], gamesPlayed['BK'], gamesPlayed['JT'], gamesPlayed['MP'], gamesPlayed['TS']];
