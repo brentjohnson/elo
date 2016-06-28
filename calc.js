@@ -34,8 +34,6 @@ var player = {
 	}
 };
 
-var winner, loser;
-
 // Iterate over each week
 for (var w = 0; w < game.length; w++) {
 	
