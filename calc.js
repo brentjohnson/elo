@@ -37,7 +37,7 @@ var player = {
 // Iterate over each week
 for (var w = 0; w < game.length; w++) {
 	
-	var startRank = _.pluck(player, 'elo');
+	var startRank = _.map(player, 'elo');
 	var gamesPlayed = {'BJ': 0, 'BK':0, 'JT':0, 'MP':0, 'TS': 0};
 
 	var sumSa = {'BJ': 0, 'BK':0, 'JT':0, 'MP':0, 'TS': 0};
@@ -83,7 +83,7 @@ for (var w = 0; w < game.length; w++) {
 		player[p].elo += Math.round(32 * (sumSa[p] - sumEa[p]));
 	}
 
-	var endRank = _.pluck(player, 'elo');
+	var endRank = _.map(player, 'elo');
 	var gp = [gamesPlayed['BJ'], gamesPlayed['BK'], gamesPlayed['JT'], gamesPlayed['MP'], gamesPlayed['TS']];
 
 	var diff = endRank.map(function (num, idx) {
