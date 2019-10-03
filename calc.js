@@ -47,6 +47,7 @@ for (var w = 0; w < game.length; w++) {
 	for (var i = 0; i < game[w].length; i++) {
 		var player1 = player[game[w][i][0]];
 		var player2 = player[game[w][i][1]];
+		var Sa = 0;
 
 		switch (game[w][i][2]) {
 			case 'W':
@@ -78,7 +79,7 @@ for (var w = 0; w < game.length; w++) {
 	};
 
 	// Print out results for the week
-	for (p in sumEa) {
+	for (var p in sumEa) {
 		console.log("Player "+p+" Performance: "+(sumSa[p]-sumEa[p])+" Expected: "+sumEa[p]+" Actual: "+sumSa[p]);
 		player[p].elo += Math.round(32 * (sumSa[p] - sumEa[p]));
 	}
