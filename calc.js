@@ -1,7 +1,7 @@
 var games = require('./scores')
 
 var players = {}
-var weekNumber = 0;
+var weekNumber = 0
 
 function getPlayer (name) {
   return players[name] || (players[name] = {
@@ -85,8 +85,14 @@ for (var week = 0; week < games.length; week++) {
   // Sort by average change in rank
   results = results.sort(function (a, b) { return b.diff - a.diff })
 
+  console.log('Name\tChange\tWin Pct')
+  results.forEach(item => console.log(`${item.name}\t${item.diff}\t${Math.round(item.sumSa / item.gamesPlayed * 10000) / 100}`))
   console.log()
-  results.forEach(item => console.log(item.name + ' ' + item.diff))
+
+  results = Object.values(players).sort(function (a, b) { return b.elo - a.elo })
+
+  console.log('Name\tELO\tRecord\tWin%')
+  results.forEach(item => console.log(`${item.name}\t${item.elo}\t${item.wins}-${item.losses}-${item.draws}\t${Math.round((item.wins + item.draws * 0.5) / (item.wins + item.draws + item.losses) * 10000) / 100}`))
   console.log()
 };
 
@@ -96,4 +102,3 @@ for (var week = 0; week < games.length; week++) {
 //     p.win_percent = Math.round((p.wins + p.draws * 0.5) / (p.wins + p.draws + p.losses) * 10000) / 100
 //   })
 
-console.log(players)
