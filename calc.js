@@ -18,22 +18,11 @@ function getPlayer (name) {
     diff: 0
   })
 }
+
 // Iterate over each week
 for (var week = 0; week < games.length; week++) {
   weekNumber++
   console.log('Week number: ' + weekNumber)
-  // var startRank = _.map(player, 'elo')
-
-  // This generates an object with each player names as keys and 0 as value
-  // { Brent: 0, Brian: 0 }
-  // var playersZero = {};
-  // Object.keys(player).forEach(function (k) {playersZero[k] = 0 })
-
-  // Initialize various accumulators
-  // Can these just be created on the fly?
-  // var gamesPlayed = Object.assign({}, playersZero)
-  // var sumSa = Object.assign({}, playersZero)
-  // var sumEa = Object.assign({}, playersZero)
 
   // Reset accumulators for weekly totals
   for (var p in players) {
@@ -96,42 +85,9 @@ for (var week = 0; week < games.length; week++) {
   // Sort by average change in rank
   results = results.sort(function (a, b) { return b.diff - a.diff })
 
+  console.log()
   results.forEach(item => console.log(item.name + ' ' + item.diff))
-
-  // Convert to array so we can sort
-  /*
-    var results = Object.values(player).sort(function(a, b){
-      return (a.elo - a.previousElo) - (b.elo - b.previousElo)
-    })
-
-    for (p in players) {
-      if (players[p].gamesPlayed > 0) {
-        console.log('Player ' + p + ' Performance: ' + (players[p].sumSa - players[p].sumEa) + ' Games played: ' + players[p].gamesPlayed + ' Expected: ' + players[p].sumEa + ' Actual: ' + players[p].sumSa)
-      }
-    }
-    */
-
-  // for (var p in sumEa) {
-  //   console.log('Player ' + p + ' Performance: ' + (sumSa[p] - sumEa[p]) + ' Expected: ' + sumEa[p] + ' Actual: ' + sumSa[p])
-  //   players[p].elo += Math.round(32 * (sumSa[p] - sumEa[p]))
-  // }
-
-  // ********************************
-
-  // var endRank = _.map(players, 'elo')
-  // var gp = [gamesPlayed.BJ, gamesPlayed.BK, gamesPlayed.JT, gamesPlayed.MP, gamesPlayed.TS]
-
-  // var diff = endRank.map(function (num, idx) {
-  //   return Math.round(((gp[idx] > 0) ? (num - startRank[idx]) / gp[idx] : 0) * 100) / 100
-  // })
-
-  //  var diff = Object.assign({}, playersZero)
-  //  Object.keys(players).forEach(function (k) {playersZero[k] = 0 })
-
-  //  var diff = _.map(players, function ())
-
-  // console.log(diff)
-  // console.log(endRank)
+  console.log()
 };
 
 // Overall win %
