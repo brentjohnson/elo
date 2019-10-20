@@ -83,7 +83,13 @@ for (var week = 0; week < games.length; week++) {
   }
 
   // Sort by average change in rank
-  results = results.sort(function (a, b) { return b.diff - a.diff })
+  results = results.sort(
+    function (a, b) {
+      var winPctA = Math.round(a.sumSa / a.gamesPlayed * 10000) / 100
+      var winPctB = Math.round(b.sumSa / b.gamesPlayed * 10000) / 100
+
+      return winPctB - winPctA || b.diff - a.diff
+    })
 
   console.log('Name\tChange\tWin Pct')
   results.forEach(item => console.log(`${item.name}\t${item.diff}\t${Math.round(item.sumSa / item.gamesPlayed * 10000) / 100}`))
