@@ -46,7 +46,24 @@ var game = [
     ['Austen', 'Travis', 'W'],
     ['Jerod', 'Joe', 'L'],
     ['Tony', 'Eric', 'L'],
+  ],
+  [
+    ['Brent', 'Brian', 'D'],
+    ['Tony', 'Chad', 'W'],
+    ['Mike', 'Jerod', 'W'],
+    ['Austen', 'Joe', 'W'],
+
+    ['Joe', 'Brent', 'W'],
+    ['Travis', 'Mike', 'W'],
+    ['Tony', 'Austen', 'L'],
+    ['Brian', 'Jerod', 'D'],
+
+    ['Travis', 'Austen', 'L'],
+    ['Tony', 'Joe', 'L'],
+    ['Brian', 'Mike', 'W'],
+    ['Chad', 'Jerod', 'W'],
   ]
+
 ]
 
 module.exports = game
