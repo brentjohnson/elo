@@ -91,8 +91,8 @@ for (var week = 0; week < games.length; week++) {
       return winPctB - winPctA || b.diff - a.diff
     })
 
-  console.log('Name\tChange\tWin Pct')
-  results.forEach(item => console.log(`${item.name}\t${item.diff}\t${Math.round(item.sumSa / item.gamesPlayed * 10000) / 100}`))
+  console.log('Name\tWin%\tELO Change')
+  results.forEach(item => console.log(`${item.name}\t${Math.round(item.sumSa / item.gamesPlayed * 10000) / 100}\t${item.diff}`))
   console.log()
 
   results = Object.values(players).sort(function (a, b) { return b.elo - a.elo })
