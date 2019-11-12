@@ -76,6 +76,24 @@ var game = [
     ['Austen', 'Chad', 'L'],
     ['Travis', 'Jerod', 'W'],
 
+  ],
+  [
+    ['Mike', 'Jerod', 'W'],
+    ['Brent', 'Tony', 'D'],
+    ['Austen', 'Chad', 'L'],
+    ['Travis', 'Brian', 'W'],
+
+    ['Brent', 'Jerod', 'L'],
+    ['Mike', 'Tony', 'W'],
+    ['Austen', 'Brian', 'L'],
+    ['Travis', 'Chad', 'W'],
+
+    ['Brent', 'Austen', 'D'],
+    ['Chad', 'Tony', 'W'],
+    ['Jerod', 'Brian', 'L'],
+    ['Travis', 'Mike', 'W'],
+
+
   ]
 
 ]
