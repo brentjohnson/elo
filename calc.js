@@ -3,7 +3,7 @@ var games = require('./scores')
 var players = {}
 var weekNumber = 0
 
-function getPlayer (name) {
+function getPlayer(name) {
   return players[name] || (players[name] = {
     name: name,
     wins: 0,
@@ -15,7 +15,16 @@ function getPlayer (name) {
     gamesPlayed: 0,
     sumSa: 0,
     sumEa: 0,
-    diff: 0
+    diff: 0,
+    opponents: {},
+    getOpponent: function (name) {
+      return this.opponents[name] || (this.opponents[name] = {
+        name: name,
+        wins: 0,
+        losses: 0,
+        draws: 0
+      })
+    }
   })
 }
 
@@ -23,6 +32,7 @@ function getPlayer (name) {
 for (var week = 0; week < games.length; week++) {
   weekNumber++
   console.log('Week number: ' + weekNumber)
+  console.log()
 
   // Reset accumulators for weekly totals
   for (var p in players) {
@@ -44,18 +54,26 @@ for (var week = 0; week < games.length; week++) {
 
     switch (games[week][i][2]) {
       case 'W':
+        // TODO: player1.wins(p2name)
         player1.wins++
+        player1.getOpponent(p2name).wins++
+        // TODO: player2.loses(p1name)
         player2.losses++
+        player2.getOpponent(p1name).losses++
         Sa = 1 // Actual outcome for P1
         break
       case 'L':
         player1.losses++
+        player1.getOpponent(p2name).losses++
         player2.wins++
+        player2.getOpponent(p1name).wins++
         Sa = 0
         break
       case 'D':
         player1.draws++
+        player1.getOpponent(p2name).draws++
         player2.draws++
+        player2.getOpponent(p1name).draws++
         Sa = 0.5
         break
     }
@@ -101,6 +119,18 @@ for (var week = 0; week < games.length; week++) {
   results.forEach(item => console.log(`${item.name}\t${item.elo}\t${item.wins}-${item.losses}-${item.draws}\t${Math.round((item.wins + item.draws * 0.5) / (item.wins + item.draws + item.losses) * 10000) / 100}`))
   console.log()
 };
+
+console.log('Player vs. Player')
+console.log('=================')
+console.log()
+
+for (p in players) {
+  console.log(`${p}`)
+  for (var o in players[p].opponents) {
+    console.log(`vs. ${o} \t${players[p].opponents[o].wins}-${players[p].opponents[o].losses}-${players[p].opponents[o].draws}\t${Math.round((players[p].opponents[o].wins + players[p].opponents[o].draws * 0.5) / (players[p].opponents[o].wins + players[p].opponents[o].draws + players[p].opponents[o].losses) * 10000) / 100}`)
+  }
+  console.log()
+}
 
 // Overall win %
 // _.map(players,
