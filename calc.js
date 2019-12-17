@@ -1,6 +1,6 @@
 var games = require('./scores')
 
-var players = {}
+var players = []
 var weekNumber = 0
 
 function getPlayer(name) {
@@ -16,7 +16,7 @@ function getPlayer(name) {
     sumSa: 0,
     sumEa: 0,
     diff: 0,
-    opponents: {},
+    opponents: [],
     getOpponent: function (name) {
       return this.opponents[name] || (this.opponents[name] = {
         name: name,
@@ -137,4 +137,3 @@ for (p in players) {
 //   function (p) {
 //     p.win_percent = Math.round((p.wins + p.draws * 0.5) / (p.wins + p.draws + p.losses) * 10000) / 100
 //   })
-
