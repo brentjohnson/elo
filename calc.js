@@ -1,7 +1,6 @@
 var games = require('./scores')
 
 var players = []
-var weekNumber = 0
 
 function getPlayer(name) {
   return players[name] || (players[name] = {
@@ -30,8 +29,8 @@ function getPlayer(name) {
 
 // Iterate over each week
 for (var week = 0; week < games.length; week++) {
-  weekNumber++
-  console.log('Week number: ' + weekNumber)
+
+  console.log('Week number: ' + (week + 1))
   console.log()
 
   // Reset accumulators for weekly totals
