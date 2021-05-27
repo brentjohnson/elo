@@ -99,7 +99,7 @@ for (var week = 0; week < games.length; week++) {
     }
   }
 
-  // Sort by average change in rank
+  // Sort by win percent, then average change in rank
   results = results.sort(
     function (a, b) {
       var winPctA = Math.round(a.sumSa / a.gamesPlayed * 10000) / 100
