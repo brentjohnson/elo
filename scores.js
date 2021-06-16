@@ -305,6 +305,7 @@ var game = [
     ['Caleb', 'Tony', 'W'],
     ['Chad', 'Travis', 'W']
   ],
+  // 2021-06-07
   [
     ['Chad', 'Mike', 'W'],
     ['Travis', 'Brent', 'W'],
@@ -315,8 +316,20 @@ var game = [
     ['Mike', 'Brent', 'W'],
     ['Caleb', 'Chad', 'W'],
     ['Travis', 'Joe', 'W']
-  ]
+  ],
+  // 2021-06-14
+  [
+    ['Brian', 'Travis', 'W'],
+    ['Caleb', 'Omar', 'W'],
+    ['Brian', 'Tony', 'D'],
+    ['Travis', 'Caleb', 'W'],
+    ['Travis', 'Omar', 'W'],
+    ['Caleb', 'Brian', 'W'],
+    ['Caleb', 'Tony', 'W'],
+    ['Brian', 'Omar', 'D'],
+    ['Travis', 'Tony', 'D']
 
+  ]
 ]
 
 module.exports = game
