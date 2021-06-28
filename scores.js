@@ -329,6 +329,21 @@ var game = [
     ['Brian', 'Omar', 'D'],
     ['Travis', 'Tony', 'D']
 
+  ],
+  // 2021-06-21
+  [
+    ['Chad', 'Joe', 'W'],
+    ['Chad', 'Travis', 'W'],
+    ['Chad', 'Caleb', 'W'],
+    ['Chad', 'Brian', 'W'],
+    ['Caleb', 'Mike', 'W'],
+    ['Caleb', 'Joe', 'W'],
+    ['Travis', 'Omar', 'D'],
+    ['Travis', 'Brian', 'W'],
+    ['Mike', 'Omar', 'W'],
+    ['Mike', 'Joe', 'W'],
+    ['Brian', 'Omar', 'W']
+
   ]
 ]
 
