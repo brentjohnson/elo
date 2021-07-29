@@ -355,6 +355,32 @@ var game = [
     ['Caleb', 'Brian', 'W'],
     ['Omar', 'Chad', 'L']
   ],
+  // 2021-07-07
+  [
+    ['Tony', 'Caleb', 'L'],
+    ['Travis', 'Omar', 'D'],
+    ['Chad', 'Brian', 'W'],
+    ['Joe', 'Caleb', 'L'],
+    ['Chad', 'Tony', 'W'],
+    ['Brian', 'Omar', 'W'],
+    ['Tony', 'Brian', 'L'],
+    ['Caleb', 'Chad', 'W'],
+    ['Joe', 'Omar', 'D'],
+    ['Chad', 'Travis', 'L'],
+    ['Joe', 'Travis', 'L']
+  ],
+  // 2021-07-12
+  [
+    ['Tony', 'Caleb', 'L'],
+    ['Brian', 'Travis', 'D'],
+    ['Chad', 'Omar', 'L'],
+    ['Chad', 'Travis', 'W'],
+    ['Brian', 'Tony', 'W'],
+    ['Omar', 'Caleb', 'L'],
+    ['Tony', 'Chad', 'L'],
+    ['Omar', 'Travis', 'D'],
+    ['Caleb', 'Brian', 'W']
+  ],
   // 2021-07-26
   [
     ['Brian', 'Travis', 'W'],
