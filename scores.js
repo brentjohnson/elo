@@ -444,7 +444,16 @@ var game = [
     ['Omar', 'Brian', 'L'],
     ['Omar', 'Chad', 'L']
   ],
-  // 2021-09-10
+  // 2021-09-06
+  [
+    ['Travis', 'Chad', 'L'],
+    ['Travis', 'Brian', 'W'],
+    ['Travis', 'Caleb', 'L'],
+    ['Chad', 'Brian', 'W'],
+    ['Chad', 'Caleb', 'W'],
+    ['Caleb', 'Brian', 'W']
+  ],
+  // 2021-09-13
   [
     ['Tony', 'Omar', 'W'],
     ['Joe', 'Tony', 'W'],
@@ -454,6 +463,18 @@ var game = [
     ['Caleb', 'Tony', 'W'],
     ['Omar', 'Chad', 'L'],
     ['Caleb', 'Joe', 'L']
+  ],
+  // 2021-09-20
+  [
+    ['Tony', 'Caleb', 'L'],
+    ['Tony', 'Brian', 'D'],
+    ['Tony', 'Chad', 'W'],
+    ['Caleb', 'Brian', 'W'],
+    ['Caleb', 'Travis', 'W'],
+    ['Travis', 'Chad', 'W'],
+    ['Travis', 'Omar', 'W'],
+    ['Brian', 'Omar', 'L'],
+    ['Omar', 'Chad', 'L']
   ]
 ]
 
