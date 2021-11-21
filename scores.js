@@ -543,7 +543,7 @@ var game = [
     ['Caleb', 'Travis', 'L'],
     ['Travis', 'Joe', 'W'],
     ['Caleb', 'Joe', 'W'],
-    ['Chad' 'Travis', 'W']
+    ['Chad', 'Travis', 'W']
   ],
   // 2021-11-15
   [
