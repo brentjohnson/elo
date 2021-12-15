@@ -596,7 +596,6 @@ var game = [
   // 2021-12-13
   [
     ['Travis', 'Caleb', 'L'],
-    ['Tony', 'Omar', 'L'],
     ['Brian', 'Joe', 'L'],
     ['Chad', 'Francisco', 'L'],
     ['Caleb', 'Joe', 'L'],
@@ -606,6 +605,7 @@ var game = [
     ['Brian', 'Travis', 'D'],
     ['Joe', 'Omar', 'L'],
     ['Caleb', 'Chad', 'W'],
+    ['Tony', 'Omar', 'L'],
     ['Francisco', 'Tony', 'W']
   ]
 ]
