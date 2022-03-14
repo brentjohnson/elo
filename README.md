@@ -11,7 +11,7 @@ This reads the scores from `scores.js` and calculates some stats for each weeks 
 
 # To do
 
-* Ability to specify input file to support multiple leagues.
+~~* Ability to specify input file to support multiple leagues.~~
 * More readable output.
 * Unit tests.
 * Charts and graphs (besides grep/copy paste to Excel)

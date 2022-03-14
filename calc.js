@@ -1,4 +1,12 @@
-var games = require('./scores')
+const myArgs = process.argv.slice(2);
+
+switch (myArgs[0]) {
+  case undefined:
+    var games = require('./scores')
+    break;
+  default:
+    var games = require(myArgs[0])
+}
 
 var players = []
 
