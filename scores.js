@@ -738,7 +738,7 @@ var game = [
     ['Ryan', 'Bobby', 'L'],
     ['Ryan', 'Tony', 'L'],
     ['Tony', 'Travis', 'L']
-  ]
+  ],
   // 2022-04-25
   [
     ['Caleb', 'Joe', 'W'],
