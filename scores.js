@@ -767,6 +767,49 @@ var game = [
     ['Ryan', 'Travis', 'W'],
     ['Tony', 'Travis', 'W'],
     ['Tony', 'Bobby', 'W']
+  ],
+  // 2022-05-09
+  [
+    ['Caleb', 'Omar', 'W'],
+    ['Caleb', 'Bobby', 'W'],
+    ['Caleb', 'Travis', 'W'],
+    ['Chad', 'Ryan', 'W'],
+    ['Chad', 'Omar', 'W'],
+    ['Chad', 'Travis', 'D'],
+    ['Omar', 'Bobby', 'W'],
+    ['Ryan', 'Bobby', 'L'],
+    ['Ryan', 'Tony', 'L'],
+    ['Tony', 'Travis', 'L'],
+    ['Tony', 'Bobby', 'L']
+  ],
+  // 2022-05-16
+  [
+    ['Chad', 'Bobby', 'W'],
+    ['Chad', 'Travis', 'L'],
+    ['Chad', 'Ryan', 'W'],
+    ['Joe', 'Omar', 'W'],
+    ['Joe', 'Bobby', 'W'],
+    ['Omar', 'Tony', 'L'],
+    ['Omar', 'Ryan', 'W'],
+    ['Ryan', 'Travis', 'L'],
+    ['Ryan', 'Bobby', 'L'],
+    ['Tony', 'Travis', 'W'],
+    ['Chad', 'Joe', 'W'],
+    ['Chad', 'Tony', 'W']
+  ],
+  // 2022-06-13
+  [
+    ['Caleb', 'Bobby', 'W'],
+    ['Caleb', 'Travis', 'L'],
+    ['Caleb', 'Chad', 'W'],
+    ['Chad', 'Joe', 'L'],
+    ['Chad', 'Bobby', 'W'],
+    ['Joe', 'Omar', 'L'],
+    ['Joe', 'Tony', 'L'],
+    ['Omar', 'Tony', 'W'],
+    ['Omar', 'Travis', 'W'],
+    ['Ryan', 'Tony', 'L'],
+    ['Ryan', 'Travis', 'L']
   ]
 ]
 
