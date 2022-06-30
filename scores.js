@@ -810,6 +810,18 @@ var game = [
     ['Omar', 'Travis', 'W'],
     ['Ryan', 'Tony', 'L'],
     ['Ryan', 'Travis', 'L']
+  ],
+  // 2022-06-27
+  [
+    ['Chad', 'Ryan', 'W'],
+    ['Chad', 'Joe', 'L'],
+    ['Chad', 'Tony', 'L'],
+    ['Joe', 'Travis', 'L'],
+    ['Joe', 'Ryan', 'L'],
+    ['Ryan', 'Tony', 'W'],
+    ['Ryan', 'Travis', 'L'],
+    ['Tony', 'Travis', 'W'],
+    ['Ryan', 'Joe', 'W']
   ]
 ]
 
