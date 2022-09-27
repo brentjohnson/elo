@@ -25,6 +25,21 @@ var game = [
     ['Ryan', 'Tony', 'W'], 
     ['Ryan', 'Travis', 'L'], 
     ['Ryan', 'Bobby', 'W']
+  ],
+  // 2022-09-20 SET:DMU 3HG NO scores
+  // 2022-09-27 SET:DMU 40 card new pre-release kit
+  [
+    ['Bobby', 'Travis', 'D'],
+    ['Bobby', 'Chad', 'L'],
+    ['Bobby', 'Ryan', 'W'],
+    ['Chad', 'Omar', 'W'],
+    ['Chad', 'Joe', 'W'],
+    ['Joe', 'Ryan', 'W'],
+    ['Joe', 'Omar', 'W'],
+    ['Omar', 'Tony', 'L'],
+    ['Ryan', 'Tony', 'W'],
+    ['Ryan', 'Travis', 'l'],
+    ['Tony', 'Travis', 'l']
   ]
 ]
 
