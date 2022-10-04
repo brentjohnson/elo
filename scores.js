@@ -40,6 +40,18 @@ var game = [
     ['Ryan', 'Tony', 'W'],
     ['Ryan', 'Travis', 'L'],
     ['Tony', 'Travis', 'L']
+  ],
+  // 2022-10-03 SET:DMU 60 card DMU only
+  [
+    ['Bobby', 'Chad', 'L'],
+    ['Bobby', 'Travis', 'L'],
+    ['Bobby', 'Joe', 'W'],
+    ['Chad', 'Ryan', 'W'],
+    ['Chad', 'Travis', 'W'],
+    ['Joe', 'Ryan', 'L'],
+    ['Joe', 'Tony', 'L'],
+    ['Ryan', 'Tony', 'W'],
+    ['Tony', 'Travis', 'L']
   ]
 ]
 
