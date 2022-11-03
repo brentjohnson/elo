@@ -63,10 +63,21 @@ var game = [
     ['Omar', 'Joe', 'L'],
     ['Bobby', 'Joe', 'W'],
     ['Bobby', 'Ryan', 'L'],
-    ['Joe', 'Travis', 'W'],
+    ['Joe', 'Travis', 'W']
+  ],
+  // 2022-10-17 SET:DMU 60 card ALL cards
+  [
+    ['Chad', 'Tony', 'W'],
+    ['Chad', 'Ryan', 'W'],
+    ['Chad', 'Travis', 'L'],
+    ['Omar', 'Tony', 'W'],
+    ['Omar', 'Travis', 'L'],
+    ['Omar', 'Ryan', 'W'],
+    ['Ryan', 'Bobby', 'W'],
+    ['Tony', 'Bobby', 'L'],
+    ['Travis', 'Bobby', 'W']
   ]
-  // 2022-10-17 SET:DMU 4HG Chad hosted
-  // 2022-10-24 SET:DMU 60 card ALL cards
+  // 2022-10-24 SET:DMU 
   // 2022-11-03 Chad hosted
 ]
 
