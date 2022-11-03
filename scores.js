@@ -52,7 +52,22 @@ var game = [
     ['Joe', 'Tony', 'L'],
     ['Ryan', 'Tony', 'W'],
     ['Tony', 'Travis', 'L']
+  ],
+  // 2022-10-10 SET:DMU Chad hosted
+  [
+    ['Chad', 'Ryan', 'W'],
+    ['Chad', 'Bobby', 'W'],
+    ['Chad', 'Travis', 'W'],
+    ['Omar', 'Travis', 'L'],
+    ['Omar', 'Ryan', 'L'],
+    ['Omar', 'Joe', 'L'],
+    ['Bobby', 'Joe', 'W'],
+    ['Bobby', 'Ryan', 'L'],
+    ['Joe', 'Travis', 'W'],
   ]
+  // 2022-10-17 SET:DMU 4HG Chad hosted
+  // 2022-10-24 SET:DMU 60 card ALL cards
+  // 2022-11-03 Chad hosted
 ]
 
 module.exports = game
