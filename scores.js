@@ -76,8 +76,18 @@ var game = [
     ['Ryan', 'Bobby', 'W'],
     ['Tony', 'Bobby', 'L'],
     ['Travis', 'Bobby', 'W']
+  ],
+  // 2022-10-24 SET:DMU
+  [
+    ['Travis', 'Bobby', 'W'],
+    ['Travis', 'Ryan', 'W'],
+    ['Travis', 'Omar', 'L'],
+    ['Omar', 'Bobby', 'W'],
+    ['Omar', 'Joe', 'W'],
+    ['Joe', 'Ryan', 'L'],
+    ['Joe', 'Bobby', 'W'],
+    ['Ryan', 'Bobby', 'W']
   ]
-  // 2022-10-24 SET:DMU 
   // 2022-11-03 Chad hosted
 ]
 
