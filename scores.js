@@ -88,7 +88,16 @@ var game = [
     ['Joe', 'Bobby', 'W'],
     ['Ryan', 'Bobby', 'W']
   ],
-  // 2022-11-07 SET:DMU all card 60 tonys hosted
+  // 2022-11-03 SET:DMU all card 60 chad hosted
+  [
+    ['Chad', 'Travis', 'W'],
+    ['Chad', 'Bobby', 'W'],
+    ['Chad', 'Omar', 'W'],
+    ['Travis', 'Omar', 'L'],
+    ['Travis', 'Bobby', 'W'],
+    ['Omar', 'Bobby', 'L']
+  ],
+  // 2022-11-07 SET:DMU all card 60 tony hosted
   [
     ['Chad', 'Tony', 'W'],
     ['Chad', 'Bobby', 'W'],
