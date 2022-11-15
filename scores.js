@@ -107,6 +107,20 @@ var game = [
     ['Omar', 'Tony', 'D'],
     ['Omar', 'Bobby', 'W'],
     ['Tony', 'Bobby', 'L']
+  ],
+  // 2022-11-14 SET:BRO 40 card sealed opening week
+  [
+    ['Ally', 'Chad', 'W'],
+    ['Ally', 'Omar', 'W'],
+    ['Ally', 'Travis', 'W'],
+    ['Chad', 'Bobby', 'W'],
+    ['Chad', 'Tony', 'L'],
+    ['Omar', 'Ryan', 'W'],
+    ['Omar', 'Tony', 'L'],
+    ['Ryan', 'Travis', 'L'],
+    ['Ryan', 'Bobby', 'L'],
+    ['Tony', 'Bobby', 'W'],
+    ['Travis', 'Bobby', 'L']
   ]
 ]
 
