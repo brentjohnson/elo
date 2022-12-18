@@ -137,6 +137,21 @@ var game = [
     ['Tony', 'Bobby', 'L'],
     ['Tony', 'Travis', 'L']
   ],
+  // 2022-11-28 SET:BRO
+  [
+    ['Ally', 'Chad', 'L'],
+    ['Ally', 'Tony', 'W'],
+    ['Ally', 'Joe', 'W'],
+    ['Chad', 'Joe', 'W'],
+    ['Chad', 'Travis', 'L'],
+    ['Omar', 'Joe', 'L'],
+    ['Omar', 'Ryan', 'D'],
+    ['Omar', 'Bobby', 'L'],
+    ['Ryan', 'Travis', 'W'],
+    ['Ryan', 'Tony', 'W'],
+    ['Tony', 'Bobby', 'L'],
+    ['Travis', 'Bobby', 'W']
+  ],
   // 2022-12-05 SET:BRO 60 card
   [
     ['Ally', 'Chad', 'W'],
