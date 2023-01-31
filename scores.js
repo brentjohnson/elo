@@ -199,7 +199,7 @@ var game = [
     ['Ally', 'Omar', 'W'],
     ['Caleb', 'Omar', 'W'],
     ['Caleb', 'Ryan', 'L'],
-    ['Caleb', 'Bobby' 'L'],
+    ['Caleb', 'Bobby', 'L'],
     ['Bobby', 'Ryan', 'L']
   ]
 ]
