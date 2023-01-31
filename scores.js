@@ -163,7 +163,44 @@ var game = [
     ['Joe', 'Ryan', 'L'],
     ['Ryan', 'Tony', 'W'],
     ['Tony', 'Travis', 'L']
+  ],
+  // 2022-12-19
+  [
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Omar', 'W'],
+    ['Ally', 'Bobby', 'L'],
+    ['Omar', 'Ryan', 'L'],
+    ['Omar', 'Travis', 'L'],
+    ['Travis', 'Bobby', 'D'],
+    ['Travis', 'Ryan', 'W'],
+    ['Bobby', 'Ryan', 'W']
+  ],
+  // 2023-1-23 SET:ANY mono-color
+  [
+    ['Joe', 'Bobby', 'L'],
+    ['Joe', 'Ryan', 'W'],
+    ['Joe', 'Travis', 'W'],
+    ['Bobby', 'Caleb', 'L'],
+    ['Bobby', 'Ally', 'W'],
+    ['Ryan', 'Ally', 'L'],
+    ['Ryan', 'Caleb', 'W'],
+    ['Caleb', 'Travis', 'L'],
+    ['Travis', 'Ally', 'W']
+  ],
+    // 2023-1-30 SET:ANY 60 card
+  [
+    ['Chad', 'Omar', 'W'],
+    ['Chad', 'Bobby', 'W'],
+    ['Chad', 'Travis', 'L'],
+    ['Travis', 'Bobby', 'W'],
+    ['Travis', 'Ally', 'W'],
+    ['Travis', 'Caleb', 'W'],
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Omar', 'W'],
+    ['Caleb', 'Omar', 'W'],
+    ['Caleb', 'Ryan', 'L'],
+    ['Caleb', 'Bobby' 'L'],
+    ['Bobby', 'Ryan', 'L']
   ]
 ]
-
 module.exports = game
