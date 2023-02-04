@@ -201,6 +201,33 @@ var game = [
     ['Caleb', 'Ryan', 'L'],
     ['Caleb', 'Bobby', 'L'],
     ['Bobby', 'Ryan', 'L']
+  ],
+  [
+    ['Ally', 'Omar', 'W'],
+    ['Ally', 'Caleb', 'W'],
+    ['Ally', 'Chad', 'W'],
+    ['Bobby', 'Travis', 'L'],
+    ['Bobby', 'Ryan', 'W'],
+    ['Bobby', 'Tony', 'L'],
+    ['Chad', 'Tony', 'W'],
+    ['Chad', 'Travis', 'W'],
+    ['Caleb', 'Ryan', 'W'],
+    ['Caleb', 'Travis','L'],
+    ['Omar', 'Tony', 'L'],
+    ['Omar', 'Ryan', 'W']
+  ],
+  [
+    ['Ally', 'Joe', 'W'],
+    ['Ally', 'Tony', 'D'],
+    ['Ally', 'Bobby', 'L'],
+    ['Bobby', 'Chad', 'W'],
+    ['Bobby', 'Travis', 'L'],
+    ['Chad', 'Joe', 'L',],
+    ['Chad', 'Ryan', 'L'],
+    ['Joe', 'Tony', 'L'],
+    ['Ryan', 'Travis', 'L'],
+    ['Ryan', 'Tony', 'W'],
+    ['Travis', 'Chad', 'W']
   ]
 ]
 module.exports = game
