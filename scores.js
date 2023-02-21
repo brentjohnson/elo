@@ -242,6 +242,33 @@ var game = [
     ['Ryan', 'Travis', 'L'],
     ['Ryan', 'Omar', 'D'],
     ['Bobby', 'Travis', 'W']
+  ],
+  // 2023-2-13 SET:ONE SEALED
+  [
+    ['Ally', 'Chad', 'W'],
+    ['Ally', 'Omar', 'W'],
+    ['Ally', 'Joe', 'W'],
+    ['Bobby', 'Caleb', 'W'],
+    ['Bobby', 'Omar', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Caleb', 'Joe', 'W'],
+    ['Caleb', 'Chad', 'W'],
+    ['Joe', 'Omar', 'W']
+  ],
+  // 2023-2-20 SET:ONE SEALED
+  [
+    ['Ally', 'Tony', 'W'],
+    ['Ally', 'Travis', 'W'],
+    ['Ally', 'Chad', 'W'],
+    ['Bobby', 'Joe', 'L'],
+    ['Bobby', 'Ryan', 'L'],
+    ['Bobby', 'Omar', 'W'],
+    ['Chad', 'Ryan', 'W'],
+    ['Chad', 'Joe', 'W'],
+    ['Joe', 'Travis', 'L'],
+    ['Omar', 'Travis', 'L'],
+    ['Omar', 'Tony', 'D'],
+    ['Ryan', 'Tony', 'W']
   ]
 ]
 module.exports = game
