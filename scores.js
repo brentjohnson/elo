@@ -229,7 +229,7 @@ var game = [
     ['Ryan', 'Tony', 'W'],
     ['Travis', 'Chad', 'W']
   ],
-  // 2023-2-7 SET:ONE SEALED
+  // 2023-02-07 SET:ONE SEALED
   [
     ['Joe', 'Omar', 'L'],
     ['Joe', 'Bobby', 'L'],
@@ -243,7 +243,7 @@ var game = [
     ['Ryan', 'Omar', 'D'],
     ['Bobby', 'Travis', 'W']
   ],
-  // 2023-2-13 SET:ONE SEALED
+  // 2023-02-13 SET:ONE 40 CARD
   [
     ['Ally', 'Chad', 'W'],
     ['Ally', 'Omar', 'W'],
@@ -255,7 +255,7 @@ var game = [
     ['Caleb', 'Chad', 'W'],
     ['Joe', 'Omar', 'W']
   ],
-  // 2023-2-20 SET:ONE SEALED
+  // 2023-02-20 SET:ONE 40 CARD
   [
     ['Ally', 'Tony', 'W'],
     ['Ally', 'Travis', 'W'],
@@ -269,6 +269,21 @@ var game = [
     ['Omar', 'Travis', 'L'],
     ['Omar', 'Tony', 'D'],
     ['Ryan', 'Tony', 'W']
+  ],
+  // 2023-02-27 SET:ONE SEALED 2
+  [
+    ['Ally', 'Chad', 'L'],
+    ['Ally', 'Caleb', 'L'],
+    ['Ally', 'Tony', 'D'],
+    ['Caleb', 'Travis', 'L'],
+    ['Caleb', 'Omar', 'L'],
+    ['Joe', 'Omar', 'W'],
+    ['Joe', 'Ryan', 'L'],
+    ['Joe', 'Travis', 'W'],
+    ['Omar', 'Tony', 'W'],
+    ['Ryan', 'Tony', 'W'],
+    ['Chad', 'Travis', 'W'],
+    ['Chad', 'Ryan', 'W']
   ]
 ]
 module.exports = game
