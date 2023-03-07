@@ -286,6 +286,7 @@ var game = [
     ['Chad', 'Ryan', 'W']
   ],
   // 2023-03-06 SET:ONE 60 CARD
+  [
     ['Ally', 'Ryan', 'W'],
     ['Ally', 'Chad', 'L'],
     ['Ally', 'Tony', 'L'],
@@ -298,5 +299,6 @@ var game = [
     ['Joe', 'Tony', 'D'],
     ['Caleb', 'Travis', 'W'],
     ['Ryan', 'Travis', 'L']
+  ]
 ]
 module.exports = game
