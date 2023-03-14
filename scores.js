@@ -299,6 +299,23 @@ var game = [
     ['Joe', 'Tony', 'D'],
     ['Caleb', 'Travis', 'W'],
     ['Ryan', 'Travis', 'L']
+  ],
+  // 2023-03-13 SET:NEO DRAFT
+  [
+    ['Bobby', 'Joe', 'W'],
+    ['Bobby', 'Caleb', 'L'],
+    ['Bobby', 'Ryan', 'L'],
+    ['Tony', 'Travis' 'L'],
+    ['Tony', 'Ally', 'W'],
+    ['Tony', 'Caleb', 'L'],
+    ['Travis', 'Caleb', 'D'],
+    ['Travis', 'Joe', 'W'],
+    ['Ryan', 'Omar', 'L'],
+    ['Ryan', 'Joe', 'L'],
+    ['Joe', Chad', 'L'],
+    ['Chad', 'Ally', 'W'],
+    ['Chad', 'Omar', 'W'],
+    ['Omar', 'Ally', 'L']
   ]
 ]
 module.exports = game
