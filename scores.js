@@ -316,6 +316,19 @@ var game = [
     ['Chad', 'Ally', 'W'],
     ['Chad', 'Omar', 'W'],
     ['Omar', 'Ally', 'L']
+  ],
+  // 2023-03-20 SET:ONE 60 CARD SWAP DECKS
+  [
+    ['Travis','Omar','W'],
+    ['Travis','Joe','W'],
+    ['Travis','Ally','W'],
+    ['Chad','Ally','W'],
+    ['Chad','Ryan','W'],
+    ['Chad','Joe','L'],
+    ['Omar','Joe','L'],
+    ['Omar','Ryan','L'],
+    ['Ryan','Ally','W'],
+    ['Ryan','Omar','W']
   ]
 ]
 module.exports = game
