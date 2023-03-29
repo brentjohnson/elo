@@ -312,7 +312,7 @@ var game = [
     ['Travis', 'Joe', 'W'],
     ['Ryan', 'Omar', 'L'],
     ['Ryan', 'Joe', 'L'],
-    ['Joe', Chad', 'L'],
+    ['Joe', 'Chad', 'L'],
     ['Chad', 'Ally', 'W'],
     ['Chad', 'Omar', 'W'],
     ['Omar', 'Ally', 'L']
@@ -329,6 +329,18 @@ var game = [
     ['Omar','Ryan','L'],
     ['Ryan','Ally','W'],
     ['Ryan','Omar','W']
+  ],
+  // 2023-03-27 SET:ANY 60 CARD
+  [
+    ['Travis', 'Tony', 'W'], 
+    ['Travis', 'Ryan', 'W'],
+    ['Travis', 'Bobby', 'L'],
+    ['Ally', 'Omar', 'W'],
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Bobby', 'L'],
+    ['Ryan', 'Omar', 'W'],
+    ['Bobby', 'Tony', 'W'],
+    ['Tony', 'Omar', 'W']
   ]
 ]
 module.exports = game
