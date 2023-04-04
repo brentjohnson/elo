@@ -319,6 +319,7 @@ var game = [
   ],
   // 2023-03-20 SET:ONE 60 CARD SWAP DECKS
   [
+    // player results
     ['Travis','Omar','W'],
     ['Travis','Joe','W'],
     ['Travis','Ally','W'],
@@ -328,7 +329,16 @@ var game = [
     ['Omar','Joe','L'],
     ['Omar','Ryan','L'],
     ['Ryan','Ally','W'],
-    ['Ryan','Omar','W']
+    // deck results
+    ['Ryan','Chad','W'],
+    ['Ryan','Ally','W'],
+    ['Ryan','Joe','W'],
+    ['Omar','Joe','W'],
+    ['Omar','Travis','W'],
+    ['Omar','Ally','L'],
+    ['Chad','Ally','L'],
+    ['Chad','Travis','L'],
+    ['Travis','Joe','W']
   ],
   // 2023-03-27 SET:ANY 60 CARD
   [
@@ -341,6 +351,20 @@ var game = [
     ['Ryan', 'Omar', 'W'],
     ['Bobby', 'Tony', 'W'],
     ['Tony', 'Omar', 'W']
+  ],
+  // 2023-04-03 SET:ANY 60 CARD
+  [
+    ['Ally', 'Omar', 'W'],
+    ['Ally', 'Chad', 'L'],
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Tony', 'L'],
+    ['Chad', 'Travis', 'W'],
+    ['Chad', 'Bobby', 'W'],
+    ['Bobby', 'Omar', 'W'],
+    ['Bobby', 'Tony', 'W'],
+    ['Omar', 'Ryan', 'L'],
+    ['Ryan', 'Travis', 'L'],
+    ['Tony', 'Travis', 'L']
   ]
 ]
 module.exports = game
