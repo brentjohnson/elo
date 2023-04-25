@@ -376,6 +376,36 @@ var game = [
     ['Chad', 'Bobby', 'L'],
     ['Ryan', 'Bobby', 'W'],
     ['Travis', 'Bobby', 'W']
+  ],
+  // 2023-04-17 SET:MOM 40 CARD SEALED
+  [
+    ['Caleb', 'Omar', 'W'],
+    ['Caleb', 'Travis', 'W'],
+    ['Caleb', 'Bobby', 'W'],
+    ['Chad', 'Tony', 'L'],
+    ['Chad', 'Brian', 'W'],
+    ['Chad', 'Ryan', 'L'],
+    ['Brian', 'Travis', 'D'],
+    ['Brian', 'Tony', 'L'],
+    ['Omar', 'Ryan', 'L'],
+    ['Omar', 'Travis', 'W'],
+    ['Ryan', 'Bobby', 'L'],
+    ['Tony', 'Bobby', 'L']
+  ],
+  // 2023-04-24 SET:MOM 40 CARD
+  [
+    ['Ally', 'Tony', 'W'],
+    ['Ally', 'Brian', 'W'],
+    ['Ally', 'Ryan', 'W'],
+    ['Bobby', 'Tony', 'L'],
+    ['Bobby', 'Travis', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Chad', 'Travis', 'W'],
+    ['Chad', 'Ryan', 'W'],
+    ['Brian', 'Ryan', 'L'],
+    ['Brian', 'Bobby', 'L'],
+    ['Ryan', 'Tony', 'W'],
+    ['Tony', 'Travis', 'W']
   ]
 ]
 module.exports = game
