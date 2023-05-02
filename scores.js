@@ -406,6 +406,20 @@ var game = [
     ['Brian', 'Bobby', 'L'],
     ['Ryan', 'Tony', 'W'],
     ['Tony', 'Travis', 'W']
-  ]
+  ],
+  // 2023-05-01 SET:MOM 40 CARD
+  [    
+    ['Ally', 'Chad', 'W'],
+    ['Ally', 'Omar', 'W'],
+    ['Ally', 'Bobby', 'L'],
+    ['Ally', 'Travis', 'L'],
+    ['Bobby', 'Travis', 'W'],
+    ['Bobby','Ryan', 'W'],
+    ['Chad', 'Ryan', 'W'],
+    ['Chad', 'Omar', 'W'],
+    ['Omar', 'Tony', 'W'],
+    ['Ryan', 'Tony', 'L'],
+    ['Tony', 'Travis', 'L']
+   ]
 ]
 module.exports = game
