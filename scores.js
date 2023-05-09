@@ -420,6 +420,18 @@ var game = [
     ['Omar', 'Tony', 'W'],
     ['Ryan', 'Tony', 'L'],
     ['Tony', 'Travis', 'L']
+   ],
+   // 2023-05-09 SET:MOM SECOND SEALED
+   [
+    ['Ally', 'Joe', 'W'],
+    ['Ally', 'Chad', 'W'],
+    ['Ally', 'Bobby', 'W'],
+    ['Bobby', 'Travis', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Ryan', 'Joe', 'W'],
+    ['Ryan', 'Travis', 'L'],
+    ['Ryan', 'Chad', 'L'],
+    ['Travis', 'Joe', 'W']
    ]
 ]
 module.exports = game
