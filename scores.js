@@ -432,6 +432,45 @@ var game = [
     ['Ryan', 'Travis', 'L'],
     ['Ryan', 'Chad', 'L'],
     ['Travis', 'Joe', 'W']
+   ],
+   //2023-05-22 SET:MOM 60 CARD
+   [
+    ['Ally', 'Brian', 'W'],
+    ['Ally', 'Chad', 'W'],
+    ['Ally', 'Bobby', 'L'],
+    ['Bobby', 'Ryan', 'W'],
+    ['Bobby', 'Joe', 'W'],
+    ['Ryan', 'Travis', 'W'],
+    ['Ryan', 'Joe', 'L'],
+    ['Travis', 'Brian', 'W'],
+    ['Travis', 'Chad', 'L'],
+    ['Travis', 'Joe', 'L'],
+    ['Chad', 'Brian', 'W']
+   ],
+   // I DONT REMEMBER
+   [
+    ['Bobby', 'Tony', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Bobby', 'Omar', 'W'],
+    ['Chad', 'Brian', 'W'],
+    ['Chad', 'Omar', 'W'],
+    ['Omar', 'Brian', 'W'],
+    ['Tony', 'Brian', 'W'],
+    ['Tony', 'Chad', 'L']
+   ],
+   //2023-06-12 SET:VOW DRAFT
+   [
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Chad', 'L'],
+    ['Ally', 'Travis', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Bobby', 'Omar', 'W'],
+    ['Bobby', 'Travis', 'L'],
+    ['Chad', 'Ryan', 'L'],
+    ['Omar', 'Tony', 'W'],
+    ['Omar', 'Travis', 'L'],
+    ['Ryan', 'Tony', 'W'],
+    ['Tony', 'Travis', 'W']
    ]
 ]
 module.exports = game
