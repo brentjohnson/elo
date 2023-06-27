@@ -471,6 +471,30 @@ var game = [
     ['Omar', 'Travis', 'L'],
     ['Ryan', 'Tony', 'W'],
     ['Tony', 'Travis', 'W']
+   ],
+   //2023-06-10 SET:LOTR SEALED
+   [
+    ['Bobby', 'Omar', 'W'],
+    ['Bobby', 'Chad', 'W'],
+    ['Bobby', 'Travis', 'W'],
+    ['Chad', 'Omar', 'W'],
+    ['Chad', 'Joe', 'W'],
+    ['Omar', 'Tony', 'L'],
+    ['Tony', 'Joe', 'W'],
+    ['Tony', 'Travis', 'L'],
+    ['Travis', 'Joe', 'L']
+   ],
+   //2023-06-26 SET:LTR DRAFT
+   [
+    ['Ally', 'Chad', 'L'],
+    ['Ally', 'Travis', 'L'],
+    ['Ally', 'Ryan', 'W'],
+    ['Bobby', 'Ryan', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Bobby', 'Tony', 'W'],
+    ['Chad', 'Travis', 'W'],
+    ['Ryan', 'Tony', 'L'],
+    ['Tony', 'Travis', 'L']
    ]
 ]
 module.exports = game
