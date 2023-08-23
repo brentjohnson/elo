@@ -507,6 +507,75 @@ var game = [
     ['Chad', 'Tony', 'W'],
     ['Ryan', 'Tony', 'L'],
     ['Tony', 'Travis', 'L']
-   ]
+   ],
+   //2023-07-10 SET:LTR DRAFT
+   [
+    ['Ally', 'Omar', 'W'],
+    ['Ally', 'Chad', 'W'],
+    ['Ally', 'Travis', 'L'],
+    ['Bobby', 'Joe', 'L'],
+    ['Bobby', 'Ryan', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Chad', 'Ryan', 'W'],
+    ['Joe', 'Travis', 'L'],
+    ['Joe', 'Tony', 'L'],
+    ['Omar', 'Tony', 'L'],
+    ['Omar', 'Ryan', 'L'],
+    ['Tony', 'Travis', 'L']
+   ],
+   //2023-07-25 SET:ANY 60 CARD
+   [
+    ['Travis', 'Ally', 'W'],
+    ['Travis', 'Bobby', 'W'],
+    ['Travis', 'Ryan', 'L'],
+    ['Chad', 'Ally', 'W'],
+    ['Chad', 'Bobby', 'W'],
+    ['Chad', 'Ryan', 'L'],
+    ['Ally', 'Ryan', 'W'],
+    ['Ryan', 'Bobby', 'L']
+   ],
+   //2023-07-31 SET:I DON'T REMEMBER
+   [
+    ['Travis', 'Ally', 'W'],
+    ['Travis', 'Bobby', 'L'],
+    ['Travis', 'Chad', 'L'],
+    ['Bobby', 'Chad', 'W'],
+    ['Bobby', 'Ryan', 'L'],
+    ['Chad', 'Ally', 'W'],
+    ['Ryan', 'Ally', 'W'],
+    ['Ryan', 'Chad', 'W']
+   ],
+   [
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Chad', 'W'],
+    ['Ally', 'Bobby', 'L'],
+    ['Bobby', 'Chad', 'W'],
+    ['Bobby', 'Travis', 'W'],
+    ['Ryan', 'Travis', 'W'],
+    ['Ryan', 'Chad', 'L'],
+    ['Chad', 'Travis', 'W']
+   ],
+   [
+    ['Travis', 'Joe', 'W'],
+    ['Ryan', 'Ally', 'L'],
+    ['Bobby', 'Chad', 'W'],
+    ['Bobby', 'Travis', 'W'],
+    ['Ally', 'Chad', 'L'],
+    ['Joe', 'Ryan', 'W'],
+    ['Ally', 'Travis', 'L'],
+    ['Chad', 'Ryan', 'W'],
+    ['Bobby', 'Joe', 'L']
+   ],
+   [
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Chad', 'W'],
+    ['Ally', 'Bobby', 'W'],
+    ['Bobby', 'Tony', 'L'],
+    ['Bobby', 'Joe', 'L'],
+    ['Chad', 'Tony', 'L'],
+    ['Chad', 'Joe', 'W'],
+    ['Joe', 'Ryan', 'L'],
+    ['Ryan', 'Tony', 'W']
+  ]
 ]
 module.exports = game
