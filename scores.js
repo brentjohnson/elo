@@ -576,6 +576,86 @@ var game = [
     ['Chad', 'Joe', 'W'],
     ['Joe', 'Ryan', 'L'],
     ['Ryan', 'Tony', 'W']
-  ]
+  ],
+  //2023-08-28 WOE 40
+  [
+    ['Ally', 'Chad', 'L'],
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Joe', 'W'],
+    ['Bobby', 'Tony', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Bobby', 'Ryan', 'W'],
+    ['Chad', 'Tony', 'W'],
+    ['Joe', 'Ryan', 'L'],
+    ['Joe', 'Tony', 'L']
+   ],
+   //2023-09-04 WOE PRE
+   [
+    ['Ryan', 'Travis', 'L'],
+    ['Ryan', 'Chad', 'L'],
+    ['Ryan', 'Bobby', 'L'],
+    ['Bobby', 'Ally', 'L'],
+    ['Bobby', 'Chad', 'W'],
+    ['Chad', 'Travis', 'W'],
+    ['Chad', 'Ally', 'W'],
+    ['Travis', 'Ally', 'L']
+   ],
+   //2023-09-11 WOE 40
+   [
+    ['Ally', 'Joe', 'D'],
+    ['Ally', 'Ryan', 'W'],
+    ['Ally', 'Travis', 'L'],
+    ['Chad', 'Joe', 'L'],
+    ['Chad', 'Travis', 'W'],
+    ['Chad', 'Tony', 'W'],
+    ['Joe', 'Ryan', 'W'],
+    ['Ryan', 'Tony', 'L'],
+    ['Tony', 'Travis', 'L']
+   ],
+  //2023-09-18 WOE 40
+   [
+    ['Ryan', 'Bobby', 'L'],
+    ['Ryan', 'Chad', 'L'],
+    ['Ryan', 'Ally', 'L'],
+    ['Ryan', 'Omar', 'W'],
+    ['Bobby', 'Chad', 'W'],
+    ['Bobby', 'Omar', 'W'],
+    ['Chad', 'Ally', 'W'],
+    ['Ally', 'Omar', 'L']
+   ],
+   //2023-09-25 WOE SEALED
+   [
+    ['Ally', 'Travis', 'L'],
+    ['Ally', 'Tony', 'W'],
+    ['Ally', 'Chad', 'L'],
+    ['Chad', 'Travis', 'W'],
+    ['Chad', 'Ryan', 'W'],
+    ['Ryan', 'Tony', 'W'],
+    ['Ryan', 'Travis', 'L'],
+    ['Tony', 'Travis', 'D']
+   ],
+   //2023-10-02 WOE 60
+   [
+    ['Travis', 'Joe', 'L'],
+    ['Travis', 'Chad', 'L'],
+    ['Travis', 'Bobby', 'L'],
+    ['Bobby', 'Chad', 'W'],
+    ['Joe', 'Chad', 'L'],
+    ['Bobby', 'Joe', 'D']
+   ],
+   //2023-10-09 WOE 60
+   [
+    ['Ally', 'Bobby', 'W'],
+    ['Ally', 'Ryan', 'L'],
+    ['Ally', 'Omar', 'W'],
+    ['Bobby', 'Chad', 'L'],
+    ['Bobby', 'Travis', 'W'],
+    ['Chad', 'Ryan', 'L'],
+    ['Chad', 'Omar', 'W'],
+    ['Omar', 'Travis', 'L'],
+    ['Ryan', 'Tony', 'W'],
+    ['Tony', 'Travis', 'D'],
+    ['Tony', 'Omar', 'W']
+   ]
 ]
 module.exports = game
